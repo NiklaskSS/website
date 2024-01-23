@@ -1,0 +1,30 @@
+header {
+    /* Headeriin oikea kuva + koon ja tekstin muokkaus */
+    text-align: center;
+    background-image: url("images1/etusivu_isokuva.jpg");
+    height: 250px;
+    padding: 5em;
+}
+header h1 {
+    color: white;
+    margin: 0;
+}
+header p {
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 20px;
+}
+body {
+    background-color: gray;
+}
+figure {
+    text-align:center;
+}
+.menu1 ul {
+    float: right;
+    margin-right: 20px;
+    list-style-type: none;
+    margin-left: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}

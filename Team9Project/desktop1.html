@@ -40,17 +40,27 @@
         margin-left: 0;
         font-family:Arial, Helvetica, sans-serif;
     }
+    .menu1 a, figure a {
+        color:black;
+    }
+    .form {
+        width: 300px;
+    }
+    .form p {
+        font-size: 18px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
 </style>
 
 </head>
 <body>
+    
     <header>
         <h1>BIG MUSCLE</h1>
         <p>FROM BODYBUILDERS</p>
         <p>TO BODYBUILDERS</p>
     </header>
-
-<!-- Tähän menu-valikko boostrapilla?? -->
+    
 <div class="menu1">
     <ul>
         <li><strong>MENU</strong></li>
@@ -61,19 +71,33 @@
         <li>APPLY FOR COACHING</li> 
     </ul>
 </div>
+
+<div class="form">
+    <p><strong>LOG IN</strong></p>
+<div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div>
+</div>
+
         <!-- Kuvat pitäis varmaan asetella flexillä + lisää oikeat kuvat -->
 <figure>
     <img src="images1/pants2.jpg" alt="image" height="200px" width="200px"/>
-        <figcaption>GYMWEAR</figcaption>
+        <figcaption><a href="desktop2.html">GYMWEAR</a></figcaption>
     <img src="images1/accessories.jpg" alt="image1" height="200px" width="200px"/>
-        <figcaption>ACCESSORIES</figcaption>
+        <figcaption><a href="Accessories.html">ACCESSORIES</a></figcaption>
     <img src="images1/supplement.jpg" alt="image2" height="200px" width="200px"/>
-        <figcaption>SUPPLEMENTS</figcaption>
+        <figcaption><a href="Suppliments.html">SUPPLEMENTS</a></figcaption>
     <img src="images1/programs.jpg" alt="image3" height="200px" width="200px"/>
         <figcaption>PROGRAMS</figcaption>
     <img src="images1/valmennus.jpg" alt="image4" height="200px" width="200px"/>
         <figcaption>APPLY FOR COACHING</figcaption>
 </figure>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
 </body>
 </html>

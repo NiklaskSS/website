@@ -14,7 +14,11 @@
         /* Headeriin oikea kuva + koon ja tekstin muokkaus */
         text-align: center;
         background-image: url("images1/etusivu_isokuva.jpg");
-        height: 250px;
+        background-repeat:no-repeat;
+        background-position: center center;
+        width: 1000px;
+        height: 300px;
+        flex-shrink: 0; 
         padding: 5em;
     }
     header h1 {
@@ -30,8 +34,11 @@
     body {
         background-color: gray;
     }
-    figure {
+    #image {
         text-align:center;
+    }
+    #image a {
+        color:black;
     }
     .menu1 ul {
         float: right;
@@ -40,40 +47,64 @@
         margin-left: 0;
         font-family:Arial, Helvetica, sans-serif;
     }
+    .menu1 a {
+        color:black;
+    }
+    .form {
+        width: 300px;
+    }
+    .form p {
+        font-size: 18px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
 </style>
 
 </head>
 <body>
+    
     <header>
         <h1>BIG MUSCLE</h1>
         <p>FROM BODYBUILDERS</p>
         <p>TO BODYBUILDERS</p>
     </header>
-
-<!-- Tähän menu-valikko boostrapilla?? -->
+    
 <div class="menu1">
     <ul>
         <li><strong>MENU</strong></li>
-        <li>GYMWEAR</li>
-        <li>ACCESSORIES</li>
-        <li>SUPPLEMENTS</li>
+        <li><a href="desktop2.html">GYMWEAR</a></li>
+        <li><a href="Accessories.html">ACCESSORIES</a></li>
+        <li><a href="Suppliments.html">SUPPLEMENTS</a></li>
         <li>PROGRAMS</li>
         <li>APPLY FOR COACHING</li> 
     </ul>
 </div>
+
+<div class="form">
+    <p><strong>LOG IN</strong></p>
+<div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div>
+</div>
+
         <!-- Kuvat pitäis varmaan asetella flexillä + lisää oikeat kuvat -->
-<figure>
+<div id="image">
     <img src="images1/pants2.jpg" alt="image" height="200px" width="200px"/>
-        <figcaption>GYMWEAR</figcaption>
+        <p><a href="desktop2.html">GYMWEAR</a></p>
     <img src="images1/accessories.jpg" alt="image1" height="200px" width="200px"/>
-        <figcaption>ACCESSORIES</figcaption>
+        <p><a href="Accessories.html">ACCESSORIES</a></p>
     <img src="images1/supplement.jpg" alt="image2" height="200px" width="200px"/>
-        <figcaption>SUPPLEMENTS</figcaption>
+        <p><a href="Suppliments.html">SUPPLEMENTS</a></p>
     <img src="images1/programs.jpg" alt="image3" height="200px" width="200px"/>
-        <figcaption>PROGRAMS</figcaption>
-    <img ssrc="images1/valmennus.jpg" alt="image4" height="200px" width="200px"/>
-        <figcaption>APPLY FOR COACHING</figcaption>
-</figure>
+        <p>PROGRAMS</p>
+    <img src="images1/valmennus.jpg" alt="image4" height="200px" width="200px"/>
+        <p>APPLY FOR COACHING</p>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
 </body>
 </html>
